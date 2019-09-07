@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-widht", initial-scale=1.0>
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Retangulo-2</title>
+
+    </head>
+    <body>
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <script>
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+             
+            //desenhando o retângulo com preenchimento azul
+            context.fillRect(50,50,100,100);
+            context.fillStyle='blue';
+            // bordas
+            context.lineWidth = 3;
+            context.strokeStyle ='red';
+            context.strokeRect(50,50,100,100);
+            
+        </script>
+    </body>

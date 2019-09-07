@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="chrome">
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script>
+        // canvas e contexto
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        context.strokeStyle = 'black';
+        context.lineWidth = 5;
+        
+        // começando o path
+        context.beginPath();
+        // comecando a desenhar um arco
+        context.arc(
+        //260,     // x centro
+        165,     // y centro
+        40,     // raio    
+        90*Math.PI/180,     // inicio: 90 graus
+        270*Math.PI/180,    // final: 270 graus
+        false            // sentido anti-horário
+        );
+        //cores e espessura da linha
+        context.stroke();
+        
+        
+        
+        
+
+    </script>
+</body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Path-ComplexDrawStar</title>
+    
+     
+ </head>
+<body>
+    <!----arquivo: retangulo-2.html-->
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script>
+        //canvas e contexto
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        
+        // criando o path
+        // iniciando o path
+        context.beginPath();
+        //desenhando uma estrela
+        context.moveTo(75, 250); // ponto inicial
+        context.lineTo(150,50);
+        context.lineTo(225,250);
+        context.lineTo(50, 120);
+        context.lineTo(250,120);
+        context.lineTo(75, 250);
+        //configurando a linha
+        context.lineWidth = 2;
+        context.strokeStyle = 'red';
+        // traçando as linhas do caminho
+        context.stroke();
+
+
+
+    </script>
+</body>
+</html>
