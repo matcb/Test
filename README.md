@@ -1,2 +1,2 @@
 # html 5 canvas
-Some simple codes, some little codes
+Simple HTML 5 CANVAS
